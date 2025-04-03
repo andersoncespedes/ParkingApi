@@ -216,3 +216,4 @@ return [
     ])->toArray(),
 
 ];
+setlocale(LC_TIME, 'es_ES.UTF-8');

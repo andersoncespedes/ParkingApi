@@ -397,53 +397,37 @@
 <body style="font-family: Arial, Helvetica, sans-serif">
     @include('pdf.header')
     <div style="font-size: 14px;    margin: 2%;margin: 1em; ">
-        <b>D.A.C. 014-202</b><br>
-        CIUDADANO:<br>
-        <b>LCDO. JONATHAN BENTACOURT</b><br>
-        <b>DIRECTOR DE ADMINISTRACION Y FINANZAS</b><br>
-        Su Despacho.
+        <b>Memorandum: </b><br>
+        Para:<br>
+        Asunto: <br>
         <br>
         <br>
-        <br>
-        <div style="font-size: 14px">
-            &nbsp; Reciba un cordial saludo Solidario y Revolucionario, la presente tiene como finalidad solicitar el
-            apoyo
-            de
-            materiales
-            de oficina como:<b> Vaso Nº7oz Cinco (05), Vaso para cafe cinco (05), Carpeta marron tipo carta seis (06),
-                Carpeta marron tipo oficio cinco (05), Resma de oja tipo carta 2 (02)
-            </b>. Para diversas actividades.
+        <div style="float:left ">
+            Enviado por:<br>
             <br>
             <br>
+            <span
+                style="display: block; /* Convierte el span en un bloque */
+             width: 130px; /* Ajusta el ancho */
+             border-bottom: 1px solid black; /* Ajusta el color y grosor */
+            margin:auto;* Ajusta el espacio arriba y abajo */"></span>
+            Lcda.: Ana Fuentes<br>
+            Directora<br>
+            Sello
+        </div>
+        <div style="float:right ">
+            Recibido por:<br>
             <br>
-            &nbsp; sin mas a que hace referencia, me despido de usted a sus gratas ordenes
             <br>
-            <br>
-            <br>
-            <br>
-            <center>
-                <b>Atentamente,</b>
-                <br>
-                <br>
-                <br>
-                <span
-                    style="display: block; /* Convierte el span en un bloque */
+            <span
+                style="display: block; /* Convierte el span en un bloque */
              width: 130px; /* Ajusta el ancho */
              border-bottom: 1px solid black; /* Ajusta el color y grosor */
             margin:auto;* Ajusta el espacio arriba y abajo */"></span>
             <br>
-            <div style="font-size: 12px">
-                LCDA. ANA FUENTES
-                <br>
-                <br>
-                Directora de Atencion Ciudadana-Municipio Angostura del Orinoco
-                <br>
-                Resolucion Nro. RJ-02-23-04 de fecha 13 de febrero de 2023 publicado
-                <br>
-                Gaceta ordinaria Nº518
-            </div>
+            <br>
 
-            </center>
+            Sello
         </div>
     </div>
 

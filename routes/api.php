@@ -5,6 +5,7 @@ use App\Http\Controllers\CargoController;
 use App\Http\Controllers\DireccionController;
 use App\Http\Controllers\OficioController;
 use App\Http\Controllers\ParroquiaController;
+use App\Http\Controllers\PDFController;
 use App\Http\Controllers\RolController;
 use App\Http\Controllers\SolicitanteController;
 use App\Http\Controllers\SolicitudController;
@@ -88,7 +89,11 @@ Route::prefix("Solicitud")->group(function(){
     Route::delete("/Eliminar/{id}", [SolicitudController::class, "RemoveOne"]);
 });
 
+Route::prefix("pdf")->group(function(){
+    Route::get("/GenerarPdf", [PDFController::class, "GenerarPdf"]);
+    Route::get("/GenerarPdfMemorandum", [PDFController::class, "GenerarPdfMemorandum"]);
 
+});
 
 Route::prefix("BackUp")->group(function(){
     Route::post("/GetBackUp", [BackupApiController::class, "crearBackup"]);
