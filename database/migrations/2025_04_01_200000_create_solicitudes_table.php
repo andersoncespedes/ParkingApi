@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->date("fecha");
             $table->string("asunto", 200);
+            $table->string("estado", 90);
+            $table->string("tipo_solicitud", 90);
             $table->unsignedBigInteger("id_solicitante")->default(1);
             $table->foreign('id_solicitante')->references('id')->on('solicitantes');
             $table->unsignedBigInteger("id_funcionario")->default(1);

@@ -17,7 +17,7 @@ class Oficio extends Model
     public function Solicitantes() : HasMany {
         return $this->hasMany(Solicitud::class, "id_oficio");
     }
-    public function Direccion(): BelongsTo {
+    public function direccion(): BelongsTo {
         return $this->belongsTo(Direccion::class, "id_direccion");
     }
 }

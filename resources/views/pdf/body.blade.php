@@ -397,7 +397,7 @@
 <body style="font-family: Arial, Helvetica, sans-serif">
     @include('pdf.header')
     <div style="font-size: 14px;    margin: 2%;margin: 1em; ">
-        <b>D.A.C. 014-202</b><br>
+        <b>D.A.C. {{$data->id}}-{{date('Y')}}</b><br>
         CIUDADANO:<br>
         <b>LCDO. JONATHAN BENTACOURT</b><br>
         <b>DIRECTOR DE ADMINISTRACION Y FINANZAS</b><br>
@@ -410,8 +410,7 @@
             apoyo
             de
             materiales
-            de oficina como:<b> Vaso Nº7oz Cinco (05), Vaso para cafe cinco (05), Carpeta marron tipo carta seis (06),
-                Carpeta marron tipo oficio cinco (05), Resma de oja tipo carta 2 (02)
+            de oficina como:<b>{{$data->asunto}}
             </b>. Para diversas actividades.
             <br>
             <br>

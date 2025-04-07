@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string("cedula", 60)->unique();
             $table->string("nombre", 60);
             $table->string("telefono", 60);
+            $table->string("correo_electronico", 90);
             $table->string("direccion", 200);
             $table->unsignedBigInteger("id_parroquia")->default(1);
             $table->foreign('id_parroquia')->references('id')->on('parroquia');

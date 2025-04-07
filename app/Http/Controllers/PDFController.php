@@ -16,9 +16,10 @@ class PDFController extends Controller
         $this->_pdf = $pdf;
         $this->_unitOfWork = $UnitOfWork;
     }
-    public function GenerarPdf(Request $request)
+    public function GenerarPdf(Request $request, int $id)
     {
-        $data = $this->_pdf->Body($request->all(), $request->tipo);
+        $datos = $this->_unitOfWork->Solicitud()->FindOne($id);
+        $data = $this->_pdf->Body($datos, $id);
         return response()->json($data);
     }
     public function GenerarPdfMemorandum(Request $request)

@@ -83,14 +83,17 @@ Route::prefix("Solicitante")->group(function(){
 
 Route::prefix("Solicitud")->group(function(){
     Route::get("/GetAll", [SolicitudController::class, "GetAllPaginate"]);
+    Route::get("/GetAllStats", [SolicitudController::class, "GetAllStats"]);
     Route::get("/FindOne/{id}", [SolicitudController::class, "GetOne"]);
     Route::post("/Guardar", [SolicitudController::class, "Save"]);
     Route::put("/Update/{id}", [SolicitudController::class, "UpdateOne"]);
     Route::delete("/Eliminar/{id}", [SolicitudController::class, "RemoveOne"]);
+    Route::get("/GetAllRelation", [SolicitudController::class, "GetAllRelation"]);
+    Route::post("/SaveDataRelation", [SolicitudController::class, "SaveDataRelation"]);
 });
 
 Route::prefix("pdf")->group(function(){
-    Route::get("/GenerarPdf", [PDFController::class, "GenerarPdf"]);
+    Route::get("/GenerarPdf/{id}", [PDFController::class, "GenerarPdf"]);
     Route::get("/GenerarPdfMemorandum", [PDFController::class, "GenerarPdfMemorandum"]);
 
 });
